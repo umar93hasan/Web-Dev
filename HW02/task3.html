@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Task3</title>
+<style>
+h1{
+	text-align: center;
+	text-size: 32px;
+}
+#container{
+	float: left;
+	width: 100%;
+	border: 1px solid black;
+}
+#list{
+	float: left;
+	text-align: center;
+	width: 33%;
+}
+#content{
+	float: right;
+	text-align: justify;
+	width: 64%;
+	margin-right: 2%;
+}
+.hidden{
+	display: none;
+}
+</style>
+</head>
+<body>
+
+<div id="container">
+	<h1>HW02 Task Three</h1>
+	<div id="list">
+		<p><a href="#" onclick='loadText("loremIpsum")'>Lorem Ipsum</a>
+		<p><a href="#" onclick='loadText("99Bottles")'>99 Bottles</a>
+		<p><a href="#" onclick='loadText("lastThing")'>Last Thing</a>
+	</div>
+	<div id="content">
+		<!--Lorem Ipsem source: https://loremipsumgenerator.com/ -->
+		<div id="loremIpsum">
+			<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque egestas congue quisque egestas diam in arcu. Blandit volutpat maecenas volutpat blandit aliquam etiam. A condimentum vitae sapien pellentesque habitant morbi tristique. Luctus accumsan tortor posuere ac. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. At consectetur lorem donec massa. Mauris vitae ultricies leo integer malesuada nunc vel. Ornare aenean euismod elementum nisi quis eleifend. Gravida neque convallis a cras semper. Imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Tincidunt ornare massa eget egestas. Tristique senectus et netus et. At imperdiet dui accumsan sit amet nulla facilisi. Faucibus purus in massa tempor nec feugiat nisl. Ultrices in iaculis nunc sed augue lacus viverra vitae. Convallis aenean et tortor at risus viverra adipiscing at.
+
+			<p>	Sit amet mauris commodo quis imperdiet massa tincidunt nunc. Pellentesque dignissim enim sit amet venenatis urna. Massa placerat duis ultricies lacus sed turpis tincidunt id. Sit amet consectetur adipiscing elit pellentesque habitant morbi. Massa eget egestas purus viverra accumsan in nisl. Scelerisque fermentum dui faucibus in ornare quam. Felis imperdiet proin fermentum leo vel orci porta. Blandit volutpat maecenas volutpat blandit aliquam. Magnis dis parturient montes nascetur ridiculus mus. Amet tellus cras adipiscing enim eu. Risus quis varius quam quisque id. Sem et tortor consequat id porta nibh. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Sed felis eget velit aliquet sagittis id consectetur purus ut. Quis auctor elit sed vulputate mi sit. Tortor at risus viverra adipiscing at in tellus. In mollis nunc sed id semper risus in. Iaculis eu non diam phasellus vestibulum lorem sed risus ultricies. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc. Lectus mauris ultrices eros in cursus turpis massa tincidunt.
+
+			<p>	Sit amet porttitor eget dolor morbi non arcu risus quis. Diam volutpat commodo sed egestas egestas. Cras semper auctor neque vitae tempus. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. Viverra nibh cras pulvinar mattis nunc. Vitae justo eget magna fermentum. Molestie at elementum eu facilisis sed odio morbi quis. Id velit ut tortor pretium. Amet venenatis urna cursus eget nunc scelerisque viverra mauris. Sit amet justo donec enim diam vulputate. Libero nunc consequat interdum varius. Morbi blandit cursus risus at ultrices. Est lorem ipsum dolor sit amet consectetur. Sit amet consectetur adipiscing elit ut aliquam. In massa tempor nec feugiat nisl. Mauris pharetra et ultrices neque ornare aenean euismod elementum. Iaculis eu non diam phasellus vestibulum lorem sed risus.
+
+			<p>	In eu mi bibendum neque egestas congue quisque egestas diam. Nunc sed blandit libero volutpat sed cras ornare arcu dui. Nisi lacus sed viverra tellus in hac habitasse platea. Id nibh tortor id aliquet lectus proin. Vivamus arcu felis bibendum ut tristique et egestas quis ipsum. Massa vitae tortor condimentum lacinia quis vel eros donec ac. Faucibus vitae aliquet nec ullamcorper sit amet. Nulla pellentesque dignissim enim sit amet venenatis urna cursus. Sed id semper risus in. Pellentesque adipiscing commodo elit at imperdiet. Vitae justo eget magna fermentum. Et malesuada fames ac turpis egestas. Morbi tempus iaculis urna id volutpat lacus laoreet non curabitur. Est placerat in egestas erat imperdiet. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
+		</div>
+		<!-- 99 Bottles of Beer source: http://www.99-bottles-of-beer.net/lyrics.html -->
+		<div id="99Bottles" class="hidden">
+			<p>	99 bottles of beer on the wall, 99 bottles of beer.
+				Take one down and pass it around, 98 bottles of beer on the wall.
+
+			<p>	98 bottles of beer on the wall, 98 bottles of beer.
+				Take one down and pass it around, 97 bottles of beer on the wall.
+
+			<p>	97 bottles of beer on the wall, 97 bottles of beer.
+				Take one down and pass it around, 96 bottles of beer on the wall.
+
+			<p>	96 bottles of beer on the wall, 96 bottles of beer.
+				Take one down and pass it around, 95 bottles of beer on the wall.
+		</div>
+		
+		<div id="lastThing" class="hidden">
+			<p>	This is the third thing.
+		</div>
+	</div>
+</div>
+
+<script>
+function loadText(divID){
+	document.getElementById("loremIpsum").style.display="none";
+	document.getElementById("99Bottles").style.display="none";
+	document.getElementById("lastThing").style.display="none";
+	document.getElementById(divID).style.display="block";
+}
+</script>
+
+</body>
+</html>
